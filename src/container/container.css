@@ -1,0 +1,102 @@
+form input {
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #da742f;
+    border-right-color: transparent;
+    padding: 10px;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    font-weight: bold;
+    color: #da742f;
+    width: 350px;
+}
+
+form input::placeholder {
+    color: #da742f;
+}
+
+form button {
+    border-radius: 0 30px 30px 0;
+    padding: 10px;
+    background-color: #da742f;
+    border: 2px solid #da742f;
+    outline: none;
+    width: 90px;
+    font-size: 25px;
+}
+
+form button:hover {
+    background-color: #ec9a63;
+    background-color: #ec9a63;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.global-container img {
+    width: auto;
+    object-fit: cover;
+
+}
+
+.layout {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.dish-data {
+    background-image: linear-gradient(180deg, #fff, #c9c3c3);
+    box-shadow: 0 4px 10px #00000094;
+}
+
+.layout a {
+    border: 1px solid #da742f;
+    background-color: #da742f;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.layout a:hover{
+    background-color: #da732fde;
+    transform: scale(1.1);
+
+}
+
+@media screen and (max-width: 900px) {
+    .global-container {
+        padding: 5px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    form input {
+        width: auto;
+        padding: px;
+    }
+
+    form button {
+        width: auto;
+        padding: 5px;
+    }
+
+    .global-container>h1,
+    .global-container>p {
+        text-align: center;
+    }
+
+}
